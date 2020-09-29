@@ -1,2 +1,2 @@
-# php-guestbook2
-php-guestbook2
+# PHP-guestbook
+php-guestbook
