@@ -14,7 +14,7 @@ class Post
         return $this->$title;
     }
 
-    public function setTitle(){
+    public function setTitle($title){
         return $this->$title;
     }
 
@@ -22,15 +22,15 @@ class Post
         return $this->$date;
     }
 
-    public function setDate(){
+    public function setDate($date){
         return $this->$date;
     }
-    
+
     public function getContent(){
         return $this->$content;
     }
 
-    public function setContent(){
+    public function setContent($content){
         return $this->$content;
     }
 
@@ -38,11 +38,20 @@ class Post
         return $this->$authorName;
     }
 
-    public function setAuthorName(){
+    public function setAuthorName($authorName){
         return $this->$authorName;
     }
 
+    // adding constructor
+    function __construct()
+    {
+        
+    }
+
     // other functions inside post class
+
+
+
 
 
 
