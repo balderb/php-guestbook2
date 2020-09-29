@@ -64,6 +64,9 @@ session_start();
 
         </form>
 
+        <div>
+            <?php echo $guestBook->getMessages(); ?>
+        </div>
 
     </main>
 
