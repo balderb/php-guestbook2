@@ -7,10 +7,8 @@ require "model/Message.php";
 require "model/Visitor.php";
 require "model/GuestBook.php";
 
-
 $guestBook = new GuestBook();
 $errMessage="";
-
 
 if ($_SERVER["REQUEST_METHOD"]=="POST" ){
 // validating
@@ -50,9 +48,9 @@ if ($_SERVER["REQUEST_METHOD"]=="POST" ){
     if (!empty($errMessage)){
         $errMessage="Please check and fix this issues :) : ".$errMessage;
         $errMessage= " <div class='alert alert-dismissible alert-danger'>
-<h4 class='alert-heading'>Warning!</h4>
-<p class='mb-0'>$errMessage
-</p> </div>";
+        <h4 class='alert-heading'>Warning!</h4>
+        <p class='mb-0'>$errMessage
+        </p> </div>";
 
         $userMessage=$errMessage;
 //    return false;
@@ -62,8 +60,6 @@ if ($_SERVER["REQUEST_METHOD"]=="POST" ){
         $newPost= new Message($author,$title,$_POST["content"]);
         $guestBook->savePost($newPost);
     }
-
-
 }
 
 
@@ -75,4 +71,3 @@ function cleanInput($data){
 };
 
 require 'view/guestBookView.php';
-?>
