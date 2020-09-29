@@ -1,4 +1,12 @@
+<?php
+// declare(strict_types=1);
 
+if(isset($_POST['title']) && isset($_POST['date']) && isset($_POST['content']) && isset($_POST['author'])) {}
+
+// Start the session
+session_start();
+
+?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -45,20 +53,12 @@
             <br>
 
             <label for="post"> Send it:
-            <input type="submit" name="post"/>
+            <button type="submit" name="post">Send<button/>
             </label>
 
         </form>
 
-        <?php
-        // declare(strict_types=1);
 
-        // Start the session
-        session_start();
-
-
-
-        ?>
 
     </main>
 

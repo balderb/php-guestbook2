@@ -1,6 +1,5 @@
 <?php
 
-if(isset($_POST['title']) && isset($_POST['date']) && isset($_POST['content']) && isset($_POST['author'])) {
 
     $myFile = fopen("includes/comments.json", "a") or die ("this does not work now");
     $writeInFile1 = "<br>Title:</br>" . $_POST['title'] . "<br>";

@@ -45,7 +45,7 @@ class Post
     // adding constructor
     function __construct()
     {
-        
+
     }
 
     // other functions inside post class
