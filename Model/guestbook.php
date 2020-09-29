@@ -17,7 +17,7 @@ class GuestBook{
 
     public function savePost($post){
         //Saving the posts
-        array_push($this->messages,$post);
+        array_push($this->messages, $post);
         $myJson=json_encode(serialize($this->messages));
         file_put_contents(self::FILE_NAME,$myJson);
 
@@ -38,7 +38,6 @@ class GuestBook{
                 $email=$oneMessage->getAuthor()->getEmail();
                 $datePost=$oneMessage->getDatePost();
 
-
                 $messagesToShow=$messagesToShow."<div class='card text-white bg-secondary mb-3' >
             <div class='card-header'>$author ($email) - $datePost</div>
             <div class='card-body'>
@@ -52,4 +51,3 @@ class GuestBook{
         return $messagesToShow ;
     }
 }
-?>
