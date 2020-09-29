@@ -1,10 +1,16 @@
 <?php
-// declare(strict_types=1);
-
-if(isset($_POST['title']) && isset($_POST['date']) && isset($_POST['content']) && isset($_POST['author'])) {}
+declare(strict_types=1);
 
 // Start the session
+
 session_start();
+
+    if(isset($_POST['post'])) {
+    $title = $_POST['$title'];
+    $date = $_POST['$date'];
+    $content = $_POST['$content'];
+    $author = $_POST['$author'];
+}
 
 ?>
 
@@ -53,11 +59,10 @@ session_start();
             <br>
 
             <label for="post"> Send it:
-            <button type="submit" name="post">Send<button/>
+            <button type="submit" name="post">Ready<button/>
             </label>
 
         </form>
-
 
 
     </main>

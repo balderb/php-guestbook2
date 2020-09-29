@@ -14,3 +14,8 @@
 }
 
 include("includes/comments.html");
+
+
+if(isset($_POST['title']) && isset($_POST['date']) && isset($_POST['content']) && isset($_POST['author'])) {
+    // Start the session
+    session_start();
