@@ -25,8 +25,7 @@ class Post
     public function setDate(){
         return $this->$date;
     }
-
-
+    
     public function getContent(){
         return $this->$content;
     }
@@ -43,6 +42,8 @@ class Post
         return $this->$authorName;
     }
 
-    // other functions
+    // other functions inside post class
+
+
 
 }
