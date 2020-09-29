@@ -62,7 +62,6 @@ if ($_SERVER["REQUEST_METHOD"]=="POST" ){
     }
 }
 
-
 function cleanInput($data){
     $data=trim($data);
     $data=stripslashes($data);
