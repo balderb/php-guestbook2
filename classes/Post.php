@@ -50,9 +50,4 @@ class Post
 
     // other functions inside post class
 
-
-
-
-
-
 }
